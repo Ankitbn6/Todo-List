@@ -1,0 +1,165 @@
+#container{
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+    background: url("./image/blank-meadow-landscape-scene-sunset-time_1308-57818.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.178);
+    box-sizing: border-box;
+    padding-top: 15vh;
+}
+#heading{
+    margin: auto;
+    width: 45vw;
+    height: 13vh;
+    /* border: 2px solid white; */
+    box-sizing: border-box;
+    font-size: 4.5vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(228, 123, 19, 0.475);
+    backdrop-filter: blur(5px);
+    text-shadow: 0px 0px 10px white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px white;
+}
+#todo{
+    margin: auto;
+    margin-top: 5vh;
+    width: 45vw;
+    /* height: 60vh; */
+    box-sizing: border-box;
+    background-color: rgba(228, 123, 19, 0.075);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px white;
+    color: white;
+    padding: 2vw 3vw;
+}
+#add{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+#add>input{
+    width: 70%;
+    height: 5vh;
+    border: none;
+    font-size: 1.7vw;
+    border-radius: 5px;
+    /* background-color: white; */
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+}
+#addList{
+    height: 5.3vh;
+    width: 20%;
+    font-weight: 800;
+    font-size: 2vw;
+    border: none;
+    border-radius: 5px;
+    color: orange;
+    text-shadow: 0px 0px 1.5px orange;
+    /* background:linear-gradient(to right, orange 50% ,green ) */
+    /* background-color: white; */
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(2px);
+}
+#todolist{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-top: 20px;
+    max-height: 43vh;
+    overflow: scroll;
+    padding: 5px 0px;
+}
+
+#todolist::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+#todolist {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#todolist>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2vw;
+    color: black;
+    /* border: solid 2px black; */
+    /* background-color: rgba(228, 123, 19, 0.475); */
+    height: 9vh;
+    backdrop-filter: blur(20px);
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.dualElement{
+    display: flex;
+    align-items: center;
+}
+.dualElement>img{
+    width:2vw ;
+    margin-left: 3px;
+    margin-right: 6px;
+}
+
+.title_input{
+    background-color: transparent;
+    border: none;
+}
+.title_input:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 500px) {
+    #heading{
+        margin: auto;
+        width: 75vw;
+        height: 10vh;
+        font-size: 12vw;
+        
+    }
+    #todo{
+        margin: auto;
+        margin-top: 5vh;
+        width: 75vw;
+        padding: 5vw 3vw;
+    }
+    #add>input{
+        width: 70%;
+        height: 5vh;
+        font-size: 5.7vw;
+    }
+    #addList{
+        height: 5.3vh;
+        width: 25%;
+        font-weight: 800;
+        font-size: 5.7vw;
+    }
+    #todolist{
+        width: 100%;
+        /* border: 2px solid black; */
+        margin-top: 20px;
+        max-height: 43vh;
+        padding: 5px 0px;
+    }
+    #todolist>div{
+        font-size: 3.5vw;
+        height: 6vh;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    .dualElement>img{
+        width:5vw ;
+        margin-left: 3px;
+        margin-right: 6px;
+    }
+}
