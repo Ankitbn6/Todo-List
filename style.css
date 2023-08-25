@@ -8,6 +8,7 @@
     background-color: rgba(0, 0, 0, 0.178);
     box-sizing: border-box;
     padding-top: 15vh;
+    box-sizing: border-box;
 }
 #heading{
     margin: auto;
