@@ -121,6 +121,9 @@
 }
 
 @media screen and (max-width: 500px) {
+    body{
+        width: fit-content;
+    }
     #heading{
         margin: auto;
         width: 90vw;
