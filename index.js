@@ -52,6 +52,7 @@ function showTodo() {
   let container = document.getElementById("todolist");
   container.innerHTML = "";
   todolist = JSON.parse(localStorage.getItem("todolist")) || [];
+  todolist.sort((a,b)=>a.status-b.status);
   todolist.map((ele) => {
     let todoItem = document.createElement("div");
     todoItem.setAttribute("id",ele.id);

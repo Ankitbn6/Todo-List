@@ -121,7 +121,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    body{
+    #container{
         width: fit-content;
     }
     #heading{
