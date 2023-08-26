@@ -1,17 +1,23 @@
+body{
+    background: url("./image/blank-meadow-landscape-scene-sunset-time_1308-57818.avif")  no-repeat;
+    background-position: fixed;
+
+    overflow: hidden;
+    /* background-size: contain; */
+    background-size: cover;
+}
 #container{
     width: 100vw;
     height: 100vh;
-    /* overflow: hidden; */
-    background: url("./image/blank-meadow-landscape-scene-sunset-time_1308-57818.avif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.178);
+    overflow: hidden;
+    /* background-color: rgba(0, 0, 0, 0.178); */
     box-sizing: border-box;
     padding-top: 15vh;
     box-sizing: border-box;
-}
+} 
 #heading{
     margin: auto;
+    /* margin-top: 8vw; */
     width: 45vw;
     height: 13vh;
     /* border: 2px solid white; */
@@ -57,6 +63,8 @@
     /* background-color: white; */
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(5px);
+    box-sizing: border-box;
+    padding-left: 10px;
 }
 #addList{
     height: 5.3vh;
@@ -95,6 +103,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
     font-size: 2vw;
     color: black;
     /* border: solid 2px black; */
@@ -104,6 +113,7 @@
     /* backdrop-filter: blur(1px); */
     margin-top: 5px;
     border-radius: 5px;
+    font-family: 'Sacramento', cursive;
 }
 .dualElement{
     display: flex;
@@ -118,12 +128,17 @@
 .title_input{
     background-color: transparent;
     border: none;
+    /* border: 1px solid black; */
+    height: 100%;
 }
 .title_input:focus{
     outline: none;
 }
 
 @media screen and (max-width: 500px) {
+    body{
+        background-size: cover;
+    }
     #heading{
         margin: auto;
         width: 90vw;
